@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MedReminder"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editMedicationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name des Medikaments, z. B. Ramipril"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editDosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dosierung, z. B. 20mg"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Uhrzeit, z. B. 08:05"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Erinnerung speichern"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test-Alarm in 10 Sekunden"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonTaken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eingenommen"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Noch nichts gespeichert."
+            android:textSize="16sp"
+            android:paddingTop="20dp" />
+
+        <TextView
+            android:id="@+id/textHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History ist noch leer."
+            android:textSize="16sp"
+            android:paddingTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>
